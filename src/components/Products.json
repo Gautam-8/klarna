@@ -86,6 +86,49 @@
         "online":true, 
         "discount":30,
         "image":"https://www.klarna.com/b2c/_next/image/?url=https://d2r76poigfg60j.cloudfront.net/7dac3b20-1714-48d4-957d-c1eb1014fa63.png&w=384&q=75"
+    } ,
+    {    "name":"Vans",
+        "distance":28, 
+        "rating":5,
+        "online":true, 
+        "discount":30,
+        "image":"https://www.klarna.com/b2c/_next/image/?url=https://d2r76poigfg60j.cloudfront.net/6d0b30aa-3b39-49f9-a777-9942bce79b91.png&w=640&q=75"
+    } ,
+    {    "name":"QVC",
+        "distance":28, 
+        "rating":5,
+        "online":true, 
+        "discount":30,
+        "image":"https://www.klarna.com/b2c/_next/image/?url=https://d2r76poigfg60j.cloudfront.net/138f014d-e419-45e8-a2ee-dae64e401c88.jpeg&w=640&q=75"
+    },
+    {    "name":"American Eagle",
+        "distance":28, 
+        "rating":5,
+        "online":true, 
+        "discount":30,
+        "image":"https://www.klarna.com/b2c/_next/image/?url=https://d2r76poigfg60j.cloudfront.net/018c1cbe-95db-401a-9570-1f2f9e379faa.jpeg&w=640&q=75"
+    }  ,
+    {    "name":"Book Outlet",
+        "distance":28, 
+        "rating":5,
+        "online":true, 
+        "discount":30,
+        "image":"https://www.klarna.com/b2c/_next/image/?url=https://d2r76poigfg60j.cloudfront.net/69411b27-5b27-480a-8461-15526ad23363.jpeg&w=384&q=75"
     } 
+   ,
+   {    "name":"Priceline",
+    "distance":28, 
+    "rating":5,
+    "online":true, 
+    "discount":30,
+    "image":"https://www.klarna.com/b2c/_next/image/?url=https://d2r76poigfg60j.cloudfront.net/e7b7a6db-7ed6-41b5-b056-8ddb9d596970.jpeg&w=384&q=75"
+},
+{    "name":"Fragrance Outlet",
+    "distance":28, 
+    "rating":5,
+    "online":true, 
+    "discount":30,
+    "image":"https://www.klarna.com/b2c/_next/image/?url=https://d2r76poigfg60j.cloudfront.net/09540066-8d54-4e13-a758-023b61579597.png&w=384&q=75"
+}
 ]
 }
