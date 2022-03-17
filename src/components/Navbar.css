@@ -6,7 +6,9 @@ body {
 button {
   cursor: pointer;
 }
-
+.header {
+  min-width: 300px;
+}
 a {
   color: #000;
 }
