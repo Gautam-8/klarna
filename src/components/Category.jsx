@@ -13,6 +13,9 @@ export const Category = () => {
     "Household",
     "Media",
   ];
+  const handleChange = (e, from, to) => {
+    console.log(e.target.checked, from, to);
+  };
   return (
     <div id="category">
       <div id="categg">
@@ -27,10 +30,14 @@ export const Category = () => {
       <div id="disc">
         <h3>Discount</h3>
         <div id="show1">
-          <input type="checkbox" />
-          <span>20-30% off</span> <br />
-          <input type="checkbox" id="inp2" />
-          <span>10-20% off</span>
+          <input type="checkbox" onChange={(e) => handleChange(e, 0, 20)} />
+          <span>5-20% off</span> <br />
+          <input
+            type="checkbox"
+            id="inp2"
+            onChange={(e) => handleChange(e, 20, 30)}
+          />
+          <span>20-30% off</span>
         </div>
       </div>
 
