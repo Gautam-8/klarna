@@ -1,7 +1,22 @@
+import { useState } from "react";
 import { Category } from "./Category";
 import data from "./Products.json";
 
 export const Home = () => {
+  const [list, setList] = useState(data.data);
+
+  const handleChange = (e) => {
+    let query = e.target.value.toLowerCase();
+    let matchinglist = data.data.filter((el) =>
+      el.name.toLowerCase().startsWith(query)
+    );
+    let notlist = data.data.filter(
+      (el) => !el.name.toLowerCase().startsWith(query)
+    );
+
+    setList([...matchinglist, ...notlist]);
+  };
+
   return (
     <div>
       <div id="height-alter"></div>
@@ -14,9 +29,9 @@ export const Home = () => {
       <div id="flex-box">
         <Category />
         <div id="products">
-          <input id="inputt" />
+          <input id="inputt" placeholder="Search" onChange={handleChange} />
           <div id="data">
-            {data.data.map((e, i) => (
+            {list.map((e, i) => (
               <div id="box" key={i}>
                 <img src={e.image} />
                 <p>{e.name}</p>
