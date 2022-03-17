@@ -31,7 +31,9 @@
   font-weight: 600;
 }
 
-#category input {
+#category input,
+#categg,
+#disc {
   cursor: pointer;
 }
 
@@ -80,7 +82,7 @@
 }
 
 @media (max-width: 740px) {
-  #categ p {
+  #categg p {
     font-size: small;
   }
 }
