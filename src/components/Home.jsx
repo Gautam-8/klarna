@@ -1,3 +1,6 @@
+import { Category } from "./Category";
+import data from "./Products.json";
+
 export const Home = () => {
   return (
     <div>
@@ -9,9 +12,23 @@ export const Home = () => {
       </p>
 
       <div id="flex-box">
-        <div id="category">category</div>
+        <Category />
+        <div id="products">
+          <input id="inputt" />
+          <div id="data">
+            {data.data.map((e, i) => (
+              <div id="box" key={i}>
+                <img src={e.image} />
+                <p>{e.name}</p>
 
-        <div id="data">data</div>
+                <div id="save">
+                  <h1>Save</h1>
+                  <h2>{e.discount}% off</h2>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
