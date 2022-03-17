@@ -1,0 +1,35 @@
+#category {
+  width: 27%;
+  padding-left: 5%;
+  margin-top: 0;
+  /* border: 1px solid black; */
+}
+#category p {
+  color: rgb(112, 109, 109);
+}
+#category p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
+
+#category hr {
+  width: 90%;
+  margin-right: 11%;
+}
+#category h4 {
+  margin-top: 25px;
+  font-weight: 500;
+}
+#category h3 {
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+#category input {
+  cursor: pointer;
+}
+
+#inp2 {
+  margin-top: 20px;
+}
