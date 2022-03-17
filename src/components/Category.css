@@ -17,13 +17,10 @@
   width: 90%;
   margin-right: 11%;
 }
-#category h4 {
-  margin-top: 25px;
-  font-weight: 500;
-}
+
 #category h3 {
   margin-top: 40px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #category input {
@@ -32,4 +29,13 @@
 
 #inp2 {
   margin-top: 20px;
+}
+
+@media (max-width: 740px) {
+  #categ p {
+    font-size: xx-small;
+  }
+  #category {
+    width: 50%;
+  }
 }
