@@ -172,7 +172,7 @@ a {
   margin-top: 7px;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 980px) {
   .header li {
     float: left;
     font-weight: bolder;
