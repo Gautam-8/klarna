@@ -15,17 +15,21 @@ export const Category = () => {
   ];
   return (
     <div id="category">
-      <h3>Categories</h3>
-      {categ.map((e) => (
-        <p>{e}</p>
-      ))}
+      <div>
+        <h3>Categories</h3>
+        {categ.map((e) => (
+          <p key={e}>{e}</p>
+        ))}
+      </div>
       <hr />
-      <h3>Filter</h3>
-      <h4>Discount</h4>
-      <input type="checkbox" />
-      <span>20-30% off</span> <br />
-      <input type="checkbox" id="inp2" />
-      <span>10-20% off</span>
+      <div>
+        <h3>Discount</h3>
+        <input type="checkbox" />
+        <span>20-30% off</span> <br />
+        <input type="checkbox" id="inp2" />
+        <span>10-20% off</span>
+      </div>
+
       <hr />
     </div>
   );
