@@ -12,3 +12,14 @@
   margin-left: 65px;
   color: gb(14, 14, 15);
 }
+#flex-box {
+  display: flex;
+}
+#category {
+  width: 27%;
+  border: 1px solid black;
+}
+#data {
+  width: 69%;
+  border: 1px solid black;
+}

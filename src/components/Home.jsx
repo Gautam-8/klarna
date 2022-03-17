@@ -7,6 +7,12 @@ export const Home = () => {
         The best online deals and coupons, including Klarna exclusives, updated
         daily.
       </p>
+
+      <div id="flex-box">
+        <div id="category">category</div>
+
+        <div id="data">data</div>
+      </div>
     </div>
   );
 };
