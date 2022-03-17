@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Category } from "./Category";
 import data from "./Products.json";
-import { Top } from "./Top";
 
 export const Home = () => {
   const [list, setList] = useState(data.data);
@@ -46,7 +45,7 @@ export const Home = () => {
           <div id="data">
             {list.map((e, i) => (
               <div id="box" key={i}>
-                <img src={e.image} />
+                <img src={e.image} alt="" />
                 <p>{e.name}</p>
 
                 <div id="save">
