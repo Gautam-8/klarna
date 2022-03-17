@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Category } from "./Category";
 import data from "./Products.json";
+import { Top } from "./Top";
 
 export const Home = () => {
   const [list, setList] = useState(data.data);
@@ -26,6 +27,7 @@ export const Home = () => {
         daily.
       </p>
 
+      {/* <Top /> */}
       <div id="flex-box">
         <Category />
         <div id="products">
