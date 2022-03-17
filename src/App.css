@@ -72,19 +72,23 @@
 @media (max-width: 1000px) {
   #data {
     width: 90%;
-    padding-left: 8%;
+    padding-left: 10%;
 
-    /* border: 1px solid black; */
     display: grid;
-    grid-template-columns: 48% 48%;
   }
   #products {
-    width: 68%;
+    width: 90%;
     /* border: 1px solid black; */
   }
+
   #inputt {
-    width: 74%;
+    width: 85%;
     margin-left: 10%;
+    margin-top: 30px;
+  }
+  #flex-box {
+    display: block;
+    margin-top: 50px;
   }
 }
 @media (max-width: 740px) {
@@ -104,6 +108,9 @@
   #save h2 {
     font-size: small;
   }
+  span {
+    font-size: small;
+  }
 }
 @media (max-width: 600px) {
   #coupon {
@@ -116,9 +123,12 @@
   }
   #data {
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 48% 48%;
   }
   #products {
-    width: 60%;
+    width: 100%;
+  }
+  #inputt {
+    width: 78%;
   }
 }
