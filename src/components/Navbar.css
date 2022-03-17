@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   background-color: rgb(255, 255, 255);
+  padding: 0;
 }
 button {
   cursor: pointer;
@@ -18,9 +19,9 @@ a {
 .header {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
+  position: absolute;
   width: 100%;
-  z-index: 3;
+  z-index: 500;
 }
 
 .header ul {
