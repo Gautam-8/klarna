@@ -18,6 +18,17 @@ export const Home = () => {
     setList([...matchinglist, ...notlist]);
   };
 
+  const provideOffer = (flag, from, to) => {
+    if (flag) {
+      let offer = data.data.filter(
+        (e) => e.discount >= from && e.discount <= to
+      );
+      setList(offer);
+    } else {
+      setList(data.data);
+    }
+  };
+
   return (
     <div>
       <div id="height-alter"></div>
@@ -29,7 +40,7 @@ export const Home = () => {
 
       {/* <Top /> */}
       <div id="flex-box">
-        <Category />
+        <Category provideOffer={provideOffer} />
         <div id="products">
           <input id="inputt" placeholder="Search" onChange={handleChange} />
           <div id="data">
