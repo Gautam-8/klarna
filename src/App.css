@@ -23,8 +23,6 @@
 }
 #data {
   width: 100%;
-
-  /* border: 1px solid black; */
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
@@ -49,7 +47,7 @@
   font-size: 180%;
 }
 #box img {
-  width: 85%;
+  width: 90%;
   border-radius: 20px;
   margin-top: 20px;
 }
@@ -71,10 +69,8 @@
 
 @media (max-width: 1000px) {
   #data {
-    width: 90%;
+    width: 95%;
     padding-left: 10%;
-
-    display: grid;
   }
   #products {
     width: 90%;
@@ -113,6 +109,9 @@
   }
 }
 @media (max-width: 600px) {
+  #data {
+    padding-left: 6%;
+  }
   #coupon {
     font-size: 25px;
     margin-left: 20px;
