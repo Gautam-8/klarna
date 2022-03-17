@@ -98,7 +98,7 @@
   }
   #save h1,
   #save h2 {
-    font-size: small;
+    font-size: x-large;
   }
   span {
     font-size: small;
@@ -125,5 +125,9 @@
   }
   #inputt {
     width: 85%;
+  }
+  #save h1,
+  #save h2 {
+    font-size: large;
   }
 }
