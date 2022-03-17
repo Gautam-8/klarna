@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <div>
       <header className="header">
-        <img src={logo} className="logo" />
+        <img src={logo} className="logo" alt="" />
 
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <div id="burgerbtn-res">
@@ -17,19 +17,19 @@ export const Navbar = () => {
 
         <ul className="menu">
           <li>
-            <a href="#work">Shop</a>
+            <a href="/">Shop</a>
           </li>
           <li>
-            <a href="#about">How it works</a>
+            <a href="/">How it works</a>
           </li>
           <li>
-            <a href="#careers">Pay in 4</a>
+            <a href="/">Pay in 4</a>
           </li>
           <li>
-            <a href="#contact">The shopping app</a>
+            <a href="/">The shopping app</a>
           </li>
           <li>
-            <a href="#contact">Help</a>
+            <a href="/">Help</a>
           </li>
           <div id="btnlog">
             <button id="login">Log In</button>
