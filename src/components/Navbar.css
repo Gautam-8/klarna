@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+button {
+  cursor: pointer;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  text-decoration: underline;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  width: 110px;
+  margin-left: 12px;
+  margin-right: 6px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+  float: right;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+#login {
+  padding: 5px 20px;
+  margin-top: 20px;
+  margin-right: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid rgb(80, 75, 75);
+}
+#get {
+  padding: 5px 20px;
+  margin-top: 20px;
+  margin-right: 40px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(80, 75, 75);
+}
+#get:hover {
+  background-color: #fff;
+  color: #000;
+}
+#login:hover,
+#login-res:hover {
+  background-color: #000;
+  color: white;
+}
+#btnlog {
+  float: right;
+}
+
+#login-res {
+  height: min-content;
+  padding: 5px 20px;
+  margin-top: 15px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(80, 75, 75);
+}
+
+#burgerbtn-res {
+  display: block;
+  float: right;
+  display: flex;
+  margin-top: 7px;
+}
+
+@media (min-width: 950px) {
+  .header li {
+    float: left;
+    font-weight: bolder;
+  }
+  .header li a {
+    padding: 30px 20px;
+  }
+  .header .menu {
+    clear: none;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  #burgerbtn-res {
+    display: none;
+  }
+}
