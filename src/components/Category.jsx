@@ -1,6 +1,6 @@
 import "./Category.css";
 
-export const Category = () => {
+export const Category = ({ provideOffer }) => {
   const categ = [
     "All",
     "Babies & Kids",
@@ -14,7 +14,7 @@ export const Category = () => {
     "Media",
   ];
   const handleChange = (e, from, to) => {
-    console.log(e.target.checked, from, to);
+    provideOffer(e.target.checked, from, to);
   };
   return (
     <div id="category">
