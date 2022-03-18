@@ -67,7 +67,7 @@ a {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 34px 20px;
   position: relative;
   user-select: none;
 }
@@ -105,6 +105,7 @@ a {
 
 .header .menu-btn {
   display: none;
+  float: right;
 }
 
 .header .menu-btn:checked ~ .menu {
@@ -161,19 +162,14 @@ a {
 #login-res {
   height: min-content;
   padding: 5px 20px;
-  margin-top: 15px;
-  margin-right: 20px;
+  margin-top: 22px;
+  margin-right: 2%;
   border-radius: 20px;
   background-color: white;
   color: black;
   border: 1px solid rgb(80, 75, 75);
-}
-
-#burgerbtn-res {
-  display: block;
   float: right;
-  display: flex;
-  margin-top: 7px;
+  display: block;
 }
 
 @media (min-width: 990px) {
@@ -191,7 +187,8 @@ a {
   .header .menu-icon {
     display: none;
   }
-  #burgerbtn-res {
+
+  #login-res {
     display: none;
   }
 }
