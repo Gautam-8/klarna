@@ -8,13 +8,10 @@ export const Navbar = () => {
         <img src={logo} className="logo" alt="" />
 
         <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <div id="burgerbtn-res">
-          <button id="login-res">Log In</button>
-          <label className="menu-icon" for="menu-btn">
-            <span className="navicon"></span>
-          </label>
-        </div>
-
+        <label className="menu-icon" for="menu-btn">
+          <span className="navicon"></span>
+        </label>
+        <button id="login-res">Log In</button>
         <ul className="menu">
           <li>
             <a href="/">Shop</a>
