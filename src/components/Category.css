@@ -44,7 +44,7 @@
 @media (max-width: 1000px) {
   #category {
     width: 90%;
-    display: flex;
+    /* display: flex; */
     margin-left: 10%;
     padding: 0;
   }
@@ -52,37 +52,31 @@
     display: none;
   }
   #categg {
-    width: 48%;
-    margin-left: 10%;
+    width: 88%;
   }
   #disc {
-    width: 50%;
+    width: 80%;
   }
-
-  #show,
-  #show1 {
-    display: none;
+  #show {
+    display: flex;
+    width: auto;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    margin-bottom: 20px;
   }
-  #categg:hover #show {
-    display: block;
-    position: absolute;
-    z-index: 300;
-    background-color: #fff;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  #disc:hover #show1 {
-    display: block;
-    position: absolute;
-    z-index: 300;
-    background-color: #fff;
-    padding-left: 10%;
-    padding-right: 10%;
+  #show p {
+    min-width: max-content;
+    padding: 10px;
+    margin: auto 12px;
+    background-color: rgb(228, 228, 228);
+    color: black;
+    font-weight: 600;
+    border-radius: 30px;
   }
 }
 
 @media (max-width: 740px) {
-  #categg p {
+  #show p {
     font-size: small;
   }
 }
